@@ -1,5 +1,9 @@
 # Fappify Changelog
 
+## 1.3.2
+
+* Fix b-tabs content not taking up free space
+
 ## 1.3.0
 
 * Add ``controls-left`` and ``controls-right`` slots to b-tabs
