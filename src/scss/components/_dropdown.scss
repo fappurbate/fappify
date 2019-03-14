@@ -14,6 +14,8 @@
     }
     .dropdown-menu {
         .dropdown-item {
+            transition-property: color;
+            transition-duration: $color-change-duration;
             &.is-disabled {
                 cursor: not-allowed;
                 &:hover {
@@ -87,6 +89,7 @@
                 bottom: auto !important;
                 right: auto !important;
                 transform: translate3d(-50%, -25%, 0);
+                transition: none;
                 white-space: normal;
                 overflow-y: auto;
                 .dropdown-item {

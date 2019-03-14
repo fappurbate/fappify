@@ -17,6 +17,8 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        transition-property: color;
+        transition-duration: $color-change-duration;
         &.is-hovered {
             background: $dropdown-item-hover-background-color;
             color: $dropdown-item-hover-color;

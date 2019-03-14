@@ -1,5 +1,10 @@
 # Fappify Changelog
 
+## 1.1.0
+
+* New dropdown menu style
+* Add $secondary variable
+
 ## 1.0.0
 
 * Rename: Buefy -> Fappify

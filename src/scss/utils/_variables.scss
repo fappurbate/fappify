@@ -1,8 +1,11 @@
 $speed-slow: 150ms !default;
 $speed-slower: 250ms !default;
 
-$primary: #7957d5 !default;
+$primary: #1e152a !default;
 $primary-invert: $white !default;
+
+$secondary: #5ab1bb !default;
+$secondary-invert: findColorInvert($secondary) !default;
 
 $info: #167df0 !default;
 
@@ -10,3 +13,14 @@ $link: $primary !default;
 $link-invert: $primary-invert !default;
 $link-visited: $grey !default;
 $link-focus-border: $primary !default;
+
+$color-change-duration: 200ms !default;
+
+$dropdown-item-hover-background-color: white;
+$dropdown-item-hover-color: $secondary;
+
+$menu-item-active-color: $primary;
+$menu-item-active-background-color: transparent;
+
+$navbar-dropdown-item-hover-color: $secondary;
+$navbar-dropdown-item-hover-background-color: transparent;
