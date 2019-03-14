@@ -1,7 +1,31 @@
 .b-tabs {
     .tabs {
+        align-items: stretch;
+        justify-content: space-between;
         margin-bottom: 0;
         flex-shrink: 0;
+
+        &.is-centered ul {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .invisible-tabs {
+            position: static !important;
+            visibility: hidden;
+            border: 0;
+        }
+
+        .border-placeholder {
+            flex-grow: 1;
+        }
+
+        .controls-container.bordered, .border-placeholder.bordered {
+            border-bottom-color: $tabs-border-bottom-color;
+            border-bottom-style: $tabs-border-bottom-style;
+            border-bottom-width: $tabs-border-bottom-width;
+        }
     }
     .is-disabled {
         pointer-events: none;

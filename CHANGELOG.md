@@ -1,6 +1,10 @@
 # Fappify Changelog
 
-## 1.1.1
+## 1.3.0
+
+* Add ``controls-left`` and ``controls-right`` slots to b-tabs
+
+## 1.2.1
 
 * Fix is-${color} classes
 

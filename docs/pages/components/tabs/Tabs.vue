@@ -17,9 +17,15 @@
             <p class="content">If you want the tabs to take full width, add the <code>expanded</code> prop.</p>
         </Example>
 
-         <Example :component="ExCustomHeaders" :code="ExCustomHeadersCode" title="Custom Headers">
+        <Example :component="ExCustomHeaders" :code="ExCustomHeadersCode" title="Custom Headers">
             <p>
                 By adding a slot named <code>header</code> you can customize the header of a tab item.
+            </p>
+        </Example>
+
+        <Example :component="ExAdditionalControls" :code="ExAdditionalControlsCode" title="Additional Controls">
+            <p>
+                You can put additional controls besides tabs using <code>controls-left</code> and <code>controls-right</code> slots. If tabs are centered, their elements are placed in a different flow from your controls.
             </p>
         </Example>
 
@@ -51,6 +57,9 @@
     import ExCustomHeaders from './examples/ExCustomHeaders'
     import ExCustomHeadersCode from '!!raw-loader!./examples/ExCustomHeaders'
 
+    import ExAdditionalControls from './examples/ExAdditionalControls'
+    import ExAdditionalControlsCode from '!!raw-loader!./examples/ExAdditionalControls'
+
     export default {
         data() {
             return {
@@ -68,7 +77,9 @@
                 ExTypesCode,
                 ExExpandedCode,
                 ExCustomHeaders,
-                ExCustomHeadersCode
+                ExCustomHeadersCode,
+                ExAdditionalControls,
+                ExAdditionalControlsCode
             }
         }
     }

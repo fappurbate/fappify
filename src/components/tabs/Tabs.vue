@@ -1,6 +1,9 @@
 <template>
     <div class="b-tabs" :class="{ 'is-fullwidth': expanded }">
         <nav class="tabs" :class="navClasses">
+            <div class="controls-container" :class="{ bordered }">
+                <slot name="controls-left" />
+            </div>
             <ul>
                 <li
                     v-for="(tabItem, index) in tabItems"
@@ -25,6 +28,43 @@
                     </a>
                 </li>
             </ul>
+            <div
+                v-if="position === 'is-centered'"
+                class="border-placeholder"
+                :class="{ bordered }">
+                <!-- These tabs here are to support height when actual tabs are
+                    absolutely positioned. -->
+                <ul class="invisible-tabs">
+                    <li
+                        v-for="(tabItem, index) in tabItems.slice(0, 1)"
+                        :key="index"
+                        :class="{
+                            'is-active': activeTab === index,
+                            'is-disabled': tabItem.disabled
+                        }"
+                    >
+                        <a @click="tabClick(index)">
+                            <template v-if="tabItem.$slots.header">
+                                <b-slot-component
+                                    :component="tabItem"
+                                    name="header"
+                                    tag="span" />
+                            </template>
+                            <template v-else>
+                                <b-icon
+                                    v-if="tabItem.icon"
+                                    :icon="tabItem.icon"
+                                    :pack="tabItem.iconPack"
+                                    :size="size"/>
+                                <span>{{ tabItem.label }}</span>
+                            </template>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="controls-container" :class="{ bordered }">
+                <slot name="controls-right" />
+            </div>
         </nav>
         <section class="tab-content">
             <slot/>
@@ -72,6 +112,9 @@
                         'is-toggle-rounded is-toggle': this.type === 'is-toggle-rounded'
                     }
                 ]
+            },
+            bordered() {
+                return this.type !== 'is-toggle' && this.type !== 'is-toggle-rounded'
             }
         },
         watch: {
