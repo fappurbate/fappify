@@ -1,20 +1,20 @@
-$speed-slow: 150ms !default;
-$speed-slower: 250ms !default;
+$speed-slow: 150ms;
+$speed-slower: 250ms;
 
-$primary: #1e152a !default;
-$primary-invert: $white !default;
+$primary: #1e152a;
+$primary-invert: $white;
 
-$secondary: #5ab1bb !default;
-$secondary-invert: findColorInvert($secondary) !default;
+$secondary: #5ab1bb;
+$secondary-invert: findColorInvert($secondary);
 
-$info: #167df0 !default;
+$info: #167df0;
 
-$link: $primary !default;
-$link-invert: $primary-invert !default;
-$link-visited: $grey !default;
-$link-focus-border: $primary !default;
+$link: $primary;
+$link-invert: $primary-invert;
+$link-visited: $grey;
+$link-focus-border: $primary;
 
-$color-change-duration: 200ms !default;
+$color-change-duration: 200ms;
 
 $dropdown-item-hover-background-color: white;
 $dropdown-item-hover-color: $secondary;
@@ -24,3 +24,16 @@ $menu-item-active-background-color: transparent;
 
 $navbar-dropdown-item-hover-color: $secondary;
 $navbar-dropdown-item-hover-background-color: transparent;
+
+$colors: (
+  "white": ($white, $black),
+  "black": ($black, $white),
+  "light": ($light, $light-invert),
+  "dark": ($dark, $dark-invert),
+  "primary": ($primary, $primary-invert),
+  "secondary": ($secondary, $secondary-invert),
+  "info": ($info, $info-invert),
+  "success": ($success, $success-invert),
+  "warning": ($warning, $warning-invert),
+  "danger": ($danger, $danger-invert)
+);

@@ -1,5 +1,9 @@
 # Fappify Changelog
 
+## 1.1.1
+
+* Fix is-${color} classes
+
 ## 1.2.0
 
 * Remove wide right padding from dropdowns that have a link
