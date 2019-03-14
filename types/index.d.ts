@@ -3,7 +3,7 @@ import _Vue from "vue";
 import { Dialog, ModalProgrammatic, LoadingProgrammatic, Toast, Snackbar } from "./components";
 import { ColorModifiers } from "./helpers";
 
-// Adds Buefy method signatures to Vue instance (ie this.$dialog)
+// Adds Fappify method signatures to Vue instance (ie this.$dialog)
 declare module 'vue/types/vue' {
     interface Vue {
         $dialog: typeof Dialog,
@@ -14,7 +14,7 @@ declare module 'vue/types/vue' {
     }
 }
 
-export declare type BuefyConfig = {
+export declare type FappifyConfig = {
     defaultContainerElement?: string,
     defaultIconPack?: string;
     defaultDialogConfirmText?: string;
@@ -41,7 +41,7 @@ export declare type BuefyConfig = {
 };
 
 declare const _default: {
-    install(Vue: typeof _Vue, config: BuefyConfig): void;
+    install(Vue: typeof _Vue, config: FappifyConfig): void;
 };
 
 export {

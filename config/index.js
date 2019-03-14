@@ -23,8 +23,8 @@ module.exports = {
   },
   lib: {
     env: require('./prod.env'),
-    filename: 'buefy',
-    name: 'Buefy',
+    filename: 'fappify',
+    name: 'Fappify',
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: '',
     productionSourceMap: true,

@@ -1,15 +1,15 @@
 {
-  "name": "buefy",
-  "version": "0.7.3",
-  "homepage": "https://buefy.org",
-  "description": "Lightweight UI components for Vue.js based on Bulma",
+  "name": "@fappurbate/fappify",
+  "version": "1.0.0",
+  "homepage": "https://github.com/fappurbate/fappify#readme",
+  "description": "Modification of Buefy created especially for Fappurbate",
   "author": "Rafael Beraldo <rafael.pimpa@gmail.com>",
   "maintainers": [
-    "Walter Tommasi <tommsi20@gmail.com>"
+    "Kothique Félixx <kothique@protonmail.ch"
   ],
   "license": "MIT",
-  "main": "dist/buefy.js",
-  "unpkg": "dist/buefy.min.js",
+  "main": "dist/fappify.js",
+  "unpkg": "dist/fappify.min.js",
   "typings": "types/index.d.ts",
   "files": [
     "dist",
@@ -18,10 +18,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/buefy/buefy.git"
+    "url": "https://github.com/fappurbate/fappify.git"
   },
   "bugs": {
-    "url": "https://github.com/buefy/buefy/issues"
+    "url": "https://github.com/fappurbate/fappify/issues"
   },
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -42,7 +42,8 @@
     "vue",
     "vuejs",
     "vue-bulma",
-    "components"
+    "components",
+    "fappurbate"
   ],
   "dependencies": {
     "bulma": "0.7.4"

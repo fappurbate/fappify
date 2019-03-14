@@ -67,7 +67,7 @@ module.exports = function(options) {
         filename: utils.assetsLibPath(getFilename('.css', options.minimize))
       }),
       new webpack.BannerPlugin({
-        banner: `/*! Buefy v${pack.version} | MIT License | github.com/buefy/buefy */ `,
+        banner: `/*! Fappify v${pack.version} | MIT License | github.com/fappurbate/fappify */ `,
         raw: true,
         entryOnly: true
       }),

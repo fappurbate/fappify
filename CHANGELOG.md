@@ -1,4 +1,8 @@
-# Buefy Changelog
+# Fappify Changelog
+
+## 1.0.0
+
+* Rename: Buefy -> Fappify
 
 ## 0.7.3
 

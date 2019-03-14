@@ -1,12 +1,12 @@
 
-import './scss/buefy-build.scss'
+import './scss/fappify-build.scss'
 
 import * as components from './components'
 
 import config, { setOptions } from './utils/config'
 import { use, registerComponentProgrammatic } from './utils/plugins'
 
-const Buefy = {
+const Fappify = {
     install(Vue, options = {}) {
         // Options
         setOptions(Object.assign(config, options))
@@ -15,15 +15,15 @@ const Buefy = {
             Vue.use(components[componentKey])
         }
         // Config component
-        const BuefyProgrammatic = {
+        const FappifyProgrammatic = {
             setOptions(options) {
                 setOptions(Object.assign(config, options))
             }
         }
-        registerComponentProgrammatic(Vue, '$buefy', BuefyProgrammatic)
+        registerComponentProgrammatic(Vue, '$fappurbate', FappifyProgrammatic)
     }
 }
 
-use(Buefy)
+use(Fappify)
 
-export default Buefy
+export default Fappify

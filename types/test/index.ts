@@ -1,15 +1,15 @@
-import { Dialog, LoadingProgrammatic, ModalProgrammatic, Snackbar, Toast, BuefyConfig } from "../index";
-import Buefy from "../index";
+import { Dialog, LoadingProgrammatic, ModalProgrammatic, Snackbar, Toast, FappifyConfig } from "../index";
+import Fappify from "../index";
 import Vue from "vue";
 
-Vue.use(Buefy);
+Vue.use(Fappify);
 
 const app = new Vue();
 
 const loader = app.$loading.open({});
 loader.close();
 
-app.$dialog.alert("Testing Buefy Typescript Typings");
+app.$dialog.alert("Testing Fappify Typescript Typings");
 app.$dialog.alert({
     message: "Testing this works",
     onConfirm: (value) => {
