@@ -16,6 +16,8 @@
         .dropdown-item {
             transition-property: color;
             transition-duration: $color-change-duration;
+            padding-right: 1rem;
+            outline: 0;
             &.is-disabled {
                 cursor: not-allowed;
                 &:hover {
@@ -26,7 +28,7 @@
         }
         .has-link a {
             @extend .dropdown-item;
-            padding-right: 3rem;
+            padding-right: 1rem !important;
             white-space: nowrap;
         }
     }

@@ -1,5 +1,9 @@
 # Fappify Changelog
 
+## 1.2.0
+
+* Remove wide right padding from dropdowns that have a link
+
 ## 1.1.0
 
 * New dropdown menu style
